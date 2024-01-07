@@ -45,7 +45,7 @@ const fetchAlbum2 = () => {
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary" id="hideButton-${photo.id}">Hide</button>
               </div>
               <small class="text-muted">${photo.id}</small>
