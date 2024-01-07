@@ -27,6 +27,14 @@ const fetchAlbum = () => {
       console.log(photos);
 
       photos.photos.forEach((photo) => {
+        const author = document.getElementById("modalAuthor");
+        const modalImg = document.getElementById("modalImg");
+        const modalTitle = document.getElementById("exampleModalLabel");
+
+        modalTitle.innerHTML = `${photo.alt}`;
+        modalImg.src = `${photo.src.tiny}`;
+        author.innerHTML = `${photo.photographer}`;
+
         const div = document.createElement("div");
         div.className = "col-md-4";
         div.innerHTML = `
